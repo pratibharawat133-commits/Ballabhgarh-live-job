@@ -1,1 +1,13 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Ballabhgarh Jobs</title><style>body{font-family:Arial;background:#f0f4f8;margin:0}header{background:#2563eb;color:#fff;padding:20px;text-align:center}.job{background:#fff;padding:15px;margin:10px;border-radius:10px;box-shadow:0 2px 5px #0001}</style></head><body><header><h1>Ballabhgarh Live Jobs</h1><p>SerpApi Google Jobs API</p></header><div id="jobs" style="max-width:800px;margin:auto;padding:15px"></div><script>let j=[{t:"Data Entry Operator",c:"Local Co",l:"Ballabhgarh"},{t:"Sales Executive",c:"Retail Shop",l:"Ballabhgarh"},{t:"Teacher",c:"School",l:"Ballabhgarh"},{t:"Delivery Boy",c:"Flipkart",l:"Ballabhgarh"}];document.getElementById('jobs').innerHTML=j.map(x=>`<div class=job><b>${x.t}</b><br>${x.c} - ${x.l}<br><a href=# style=color:#fff;background:#2563eb;padding:5px>Apply</a></div>`).join('')</script></body></html>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Ballabhgarh Jobs</title><style>body{font-family:Arial;background:#f0f4f8;margin:0}header{background:#2563eb;color:#fff;padding:20px;text-align:center}.job{background:#fff;padding:15px;margin:10px;border-radius:10px}</style></head><body>
+<header><h1>Ballabhgarh Live Jobs</h1></header>
+<div id="jobs" style="max-width:800px;margin:auto;padding:15px"></div>
+<script>
+let jobs=[
+{t:"Data Entry Operator",c:"Local Company",l:"Ballabhgarh",link:"https://www.google.com/search?q=data+entry+operator+jobs+Ballabhgarh"},
+{t:"Sales Executive",c:"Retail Shop",l:"Ballabhgarh",link:"https://www.google.com/search?q=sales+executive+jobs+Ballabhgarh"},
+{t:"Teacher",c:"Private School",l:"Ballabhgarh",link:"https://www.google.com/search?q=teacher+jobs+Ballabhgarh"},
+{t:"Delivery Boy",c:"Flipkart",l:"Ballabhgarh",link:"https://www.google.com/search?q=delivery+boy+jobs+Ballabhgarh"}
+];
+document.getElementById('jobs').innerHTML=jobs.map(x=>`<div class=job><b>${x.t}</b><br>${x.c} - ${x.l}<br><br><a href="${x.link}" target="_blank" style="background:#2563eb;color:#fff;padding:8px 15px;border-radius:6px;text-decoration:none">Apply Now</a></div>`).join('');
+</script></body></html>
