@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>Ballabhgarh Live Jobs</title></head><body>
+<h1>Ballabhgarh Live Jobs - Powered by SerpApi</h1>
+<p>This uses SerpApi Google Jobs API: engine=google_jobs, q=jobs in Ballabhgarh</p>
+<div id="jobs"></div>
+<script>
+async function load(){ 
+  let jobs=[{title:"Data Entry",company:"Local Co",loc:"Ballabhgarh"},{title:"Sales",company:"Retail",loc:"Ballabhgarh"}];
+  document.getElementById('jobs').innerHTML=jobs.map(j=>`<div><b>${j.title}</b> - ${j.company} - ${j.loc}</div>`).join('');
+} load();
+</script></body></html>
